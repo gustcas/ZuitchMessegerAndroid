@@ -124,8 +124,9 @@ namespace WoWonder.Activities.Tab.Fragment
                 ViewPager.Adapter.NotifyDataSetChanged();
 
                 // Abrir por defecto en «Chats» (índice 1)
-                ViewPager.CurrentItem = 1;
-                ResaltarPestaña(ButtonChats, TxtChats);
+                ViewPager.CurrentItem = 0;
+                ResetTabs();
+                ResaltarPestaña(ButtonHome, TxtHome);
             }
             catch (Exception e)
             {
