@@ -610,7 +610,7 @@ namespace WoWonder.Activities.Tab
             {
                 if (run)
                 {
-                    // reschedule the job 
+                    // reschedule the job
                     AppApiService.GetInstance()?.StartForegroundService(this);
                 }
                 else
